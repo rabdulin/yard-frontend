@@ -3,9 +3,7 @@ body {
   font-size: 16px;
   line-height: 1;
   color: #3e4247;
-  background-color: #eaebf0;
-  background-image: url("img/background.png");
-  background-size: 1.25rem 0.625rem;
+  background-color: #ffffff;
 }
 
 .container {
@@ -39,94 +37,6 @@ body {
   margin-right: 0;
 }
 
-.black-logo{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #161616;
-  text-align: center;
-}
-
-.main-content {
-  padding-top: 4rem;
-  padding-bottom: 2.8rem;
-}
-
-.main-title {
-  margin: 0;
-
-  font-size: 24px;
-  font-weight: bold;
-  color: #3e4247;
-}
-
-.main-content-text {
-  margin-bottom: 1rem;
-  line-height: 1.5;
-}
-
-.btn {
-  padding: 0.75rem 2rem;
-  margin-bottom: 4rem;
-
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.0;
-  color: #ffffff;
-  text-align: center;
-
-  background-color: #000000;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.complex-card {
-  display: flex;
-  margin-bottom: 3rem;
-
-  background-color: #ffffff;
-  border-bottom: solid 2px #646971;
-
-  cursor: pointer;
-}
-
-.complex-card-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.complex-card:hover {
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
-}
-
-.complex-card-info {
-  padding: 1.5rem 2rem;
-  background-color: #ffffff;
-}
-
-.complex-card-location {
-  margin: 0;
-  margin-bottom: 1.5rem;
-
-  font-family: Monaco, Menlo, Consolas, monospace;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #646971;
-}
-
-.complex-card-title {
-  margin: 0;
-
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 1.4;
-}
-
-.complex-card-description {
-  line-height: 1.5;
-}
-
 .footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -157,6 +67,11 @@ body {
 .footer-complexes, .footer-company {
   border-top: solid 2px #3e4247;
   padding-top: 1rem;
+}
+
+.footer-nav {
+  padding-top: 1rem;
+  border-top: solid 2px #3e4247;
 }
 
 .footer-link {
