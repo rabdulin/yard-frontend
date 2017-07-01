@@ -3,13 +3,13 @@
   border-top: solid 1px #eaebf0;
 }
 
-.complex-name{
+.main-complex-name{
   margin: 0;
   font-family: 'Philosopher', sans-serif;
   font-weight: 700;
 }
 
-.complex-address{
+.main-complex-address{
   font-family: 'FiraSans', sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -18,7 +18,7 @@
   margin-bottom: 1rem;
 }
 
-.btn-favorites {
+.main-favorites-button {
   align-self: flex-start;
   padding: 0.5rem 1rem;
   font-family: 'Fira Sans', sans-serif;
@@ -33,13 +33,13 @@
   cursor: pointer;
 }
 
-.complex-gallery {
+.main-complex-gallery {
   display: flex;
   overflow-x: hidden;
   position: relative;
 }
 
-.btn-photos {
+.main-photos-button {
   position: absolute;
   padding: 0.5rem 1rem;
   margin-top: -2.7rem;
@@ -54,17 +54,17 @@
   background-color: #00779a;
 }
 
-.complex-summary {
+.main-complex-summary {
   display: flex;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-.complex-summary-item {
+.main-complex-summary-item {
   margin-right: 3rem;
 }
 
-.complex-summary-title {
+.main-complex-summary-title {
   margin: 0;
   font-family: Philosopher, sans-serif;
   font-weight: 700;
@@ -72,7 +72,7 @@
   color: #3e4247;
 }
 
-.complex-summary-subtitle {
+.main-complex-summary-subtitle {
   display: block;
   margin-top: 0.6rem;
   font-family: 'Fira Sans', sans-serif;
@@ -82,11 +82,11 @@
   color: #a9afb6;
 }
 
-.complex-characters {
+.main-complex-characters {
   padding-bottom: 1.5rem;
 }
 
-.complex-characters-title {
+.main-complex-characters-title {
   margin: 0;
   padding-top: 2.3rem;
   font-family: Philosopher, sans-serif;
@@ -96,7 +96,7 @@
   border-top: solid 1px #e0e0e1;
 }
 
-.complex-characters-key {
+.main-complex-characters-key {
   margin-bottom: 0.7rem;
   font-size: 16px;
   font-weight: 400;
@@ -104,7 +104,7 @@
   color: #a9afb6;
 }
 
-.complex-characters-value {
+.main-complex-characters-value {
   margin-left: 0;
   margin-bottom: 0.5rem;
   font-size: 16px;
@@ -113,11 +113,11 @@
   color: #3e4247;
 }
 
-.complex-description {
+.main-complex-description {
   margin-bottom: 1.5rem;
 }
 
-.complex-description-title {
+.main-complex-description-title {
   margin: 0;
   font-family: Philosopher, sans-serif;
   font-size: 24px;
@@ -126,7 +126,7 @@
   color: #3e4247;
 }
 
-.complex-description-text {
+.main-complex-description-text {
   margin-top: 0;
   margin-bottom: 1.5rem;
   font-size: 16px;
@@ -134,15 +134,15 @@
   color: #3e4247;
 }
 
-.complex-description-text:last-child {
+.main-complex-description-text:last-child {
   margin-bottom: 0;
 }
 
-.complex-amenities {
+.main-complex-amenities {
   padding-bottom: 3.5rem;
 }
 
-.complex-amenities-title {
+.main-complex-amenities-title {
   margin: 0;
   margin-bottom: 0.9rem;
   padding-top: 2.15rem;
@@ -154,20 +154,20 @@
   border-top: solid 1px #eaebf0;
 }
 
-.complex-amenities-item {
+.main-complex-amenities-item {
   margin-bottom: 0.5rem;
   font-size: 16px;
   line-height: 1.38;
   color: #3e4247;
 }
 
-.complex-offers {
+.main-complex-offers {
   padding-top: 4rem;
   padding-bottom: 3.75rem;
   background-color: #f4f5f9;
 }
 
-.complex-offers-title {
+.main-complex-offers-title {
   margin: 0;
   margin-bottom: 1.5rem;
   font-family: Philosopher, sans-serif;
@@ -178,12 +178,12 @@
   text-align: center;
 }
 
-.complex-offers-card {
+.main-complex-offers-card {
   padding: 1.5rem 2rem;
   background-color: #ffffff;
 }
 
-.complex-offers-card-title {
+.main-complex-offers-card-title {
   margin: 0;
   font-family: Philosopher, sans-serif;
   font-size: 20px;
@@ -192,7 +192,7 @@
   color: #3e4247;
 }
 
-.complex-offers-card-key {
+.main-complex-offers-card-key {
   display: block;
   margin: 0;
   margin-bottom: 0.6rem;
@@ -201,7 +201,7 @@
   color: #a9afb6;
 }
 
-.complex-offers-card-value {
+.main-complex-offers-card-value {
   display: block;
   margin: 0;
   margin-top: 1.5rem;
@@ -211,7 +211,7 @@
   color: #3e4247;
 }
 
-.btn {
+.main-complex-offers-card-button {
   display: block;
   margin: 0 auto;
   margin-top: 2.2rem;
@@ -227,7 +227,7 @@
   cursor: pointer;
 }
 
-.complex-geo {
+.main-complex-geo {
   padding-top: 4rem;
   padding-bottom: 13.5rem;
   margin-bottom: 13.5rem;
@@ -235,7 +235,7 @@
   color: #ffffff;
 }
 
-.complex-geo-name {
+.main-complex-geo-name {
   margin: 0;
   margin-top: 7.45rem;
   margin-bottom: 3.1rem;
@@ -245,7 +245,7 @@
   color: #a9afb6;
 }
 
-.complex-geo-title {
+.main-complex-geo-title {
   margin: 0;
   margin-bottom: 3.2rem;
   font-family: Philosopher, sans-serif;
@@ -255,20 +255,20 @@
   color: #ffffff;
 }
 
-.complex-geo-link {
+.main-complex-geo-link {
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   color: #00779a;
   text-decoration: none;
 }
 
-.complex-geo-map {
+.main-complex-geo-map {
   position: absolute;
   margin-top: 3.8rem;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-.complex-geo-nearby {
+.main-complex-geo-nearby {
   position: absolute;
   width: 583px;
   margin-top: 3.8rem;
@@ -276,18 +276,18 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-.complex-geo-nearby-item {
+.main-complex-geo-nearby-item {
   padding: 1.5rem;
   padding-bottom: 1.57rem;
   box-sizing: border-box;
   border-bottom: solid 1px #e0e0e1;
 }
 
-.complex-geo-nearby-item:last-child {
+.main-complex-geo-nearby-item:last-child {
   border-bottom: 0;
 }
 
-.complex-geo-nearby-place {
+.main-complex-geo-nearby-place {
   display: block;
   margin: 0;
   margin-bottom: 0.5rem;
@@ -297,7 +297,7 @@
   color: #3e4247;
 }
 
-.complex-geo-nearby-distance {
+.main-complex-geo-nearby-distance {
   display: block;
   margin: 0;
   font-size: 16px;
