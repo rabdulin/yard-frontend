@@ -4,7 +4,8 @@ body {
   line-height: 1;
   color: #3e4247;
   background-color: #eaebf0;
-  background-image: url(img/background.png);
+  background-image: url("img/background.png");
+  background-size: 1.25rem 0.625rem;
 }
 
 .container {
