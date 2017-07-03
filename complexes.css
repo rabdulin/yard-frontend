@@ -14,7 +14,7 @@
   background-color: #eaebf0;
 }
 
-.main-contact-title {
+.contact-title {
   margin: 0;
 
   font-size: 24px;
@@ -22,12 +22,12 @@
   color: #3e4247;
 }
 
-.main-contact-text {
+.contact-text {
   margin-bottom: 1rem;
   line-height: 1.5;
 }
 
-.main-contact-button {
+.contact-button {
   padding: 0.75rem 2rem;
   margin-bottom: 4rem;
 
@@ -43,7 +43,7 @@
   cursor: pointer;
 }
 
-.main-complex-card {
+.complex-card {
   display: flex;
   margin-bottom: 3rem;
 
@@ -53,22 +53,22 @@
   cursor: pointer;
 }
 
-.main-complex-card-img {
+.complex-card-img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.main-complex-card:hover {
+.complex-card:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-.main-complex-card-info {
+.complex-card-info {
   padding: 1.5rem 2rem;
   background-color: #ffffff;
 }
 
-.main-complex-card-location {
+.complex-card-location {
   margin: 0;
   margin-bottom: 1.5rem;
 
@@ -78,7 +78,7 @@
   color: #646971;
 }
 
-.main-complex-card-title {
+.complex-card-title {
   margin: 0;
 
   font-size: 40px;
@@ -86,6 +86,6 @@
   line-height: 1.4;
 }
 
-.main-complex-card-description {
+.complex-card-description {
   line-height: 1.5;
 }

@@ -3,13 +3,13 @@
   border-top: solid 1px #eaebf0;
 }
 
-.main-complex-name{
+.complex-name{
   margin: 0;
   font-family: 'Philosopher', sans-serif;
   font-weight: 700;
 }
 
-.main-complex-address{
+.complex-address{
   font-family: 'FiraSans', sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -18,7 +18,7 @@
   margin-bottom: 1rem;
 }
 
-.main-favorites-button {
+.favorites-button {
   align-self: flex-start;
   padding: 0.5rem 1rem;
   font-family: 'Fira Sans', sans-serif;
@@ -33,13 +33,13 @@
   cursor: pointer;
 }
 
-.main-complex-gallery {
+.complex-gallery {
   display: flex;
   overflow-x: hidden;
   position: relative;
 }
 
-.main-photos-button {
+.photos-button {
   position: absolute;
   padding: 0.5rem 1rem;
   margin-top: -2.7rem;
@@ -54,17 +54,17 @@
   background-color: #00779a;
 }
 
-.main-complex-summary {
+.complex-summary {
   display: flex;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-.main-complex-summary-item {
+.complex-summary-item {
   margin-right: 3rem;
 }
 
-.main-complex-summary-title {
+.complex-summary-title {
   margin: 0;
   font-family: Philosopher, sans-serif;
   font-weight: 700;
@@ -72,7 +72,7 @@
   color: #3e4247;
 }
 
-.main-complex-summary-subtitle {
+.complex-summary-subtitle {
   display: block;
   margin-top: 0.6rem;
   font-family: 'Fira Sans', sans-serif;
@@ -82,11 +82,11 @@
   color: #a9afb6;
 }
 
-.main-complex-characters {
+.complex-characters {
   padding-bottom: 1.5rem;
 }
 
-.main-complex-characters-title {
+.complex-characters-title {
   margin: 0;
   padding-top: 2.3rem;
   font-family: Philosopher, sans-serif;
@@ -96,7 +96,7 @@
   border-top: solid 1px #e0e0e1;
 }
 
-.main-complex-characters-key {
+.complex-characters-key {
   margin-bottom: 0.7rem;
   font-size: 16px;
   font-weight: 400;
@@ -104,7 +104,7 @@
   color: #a9afb6;
 }
 
-.main-complex-characters-value {
+.complex-characters-value {
   margin-left: 0;
   margin-bottom: 0.5rem;
   font-size: 16px;
@@ -113,11 +113,11 @@
   color: #3e4247;
 }
 
-.main-complex-description {
+.complex-description {
   margin-bottom: 1.5rem;
 }
 
-.main-complex-description-title {
+.complex-description-title {
   margin: 0;
   font-family: Philosopher, sans-serif;
   font-size: 24px;
@@ -126,7 +126,7 @@
   color: #3e4247;
 }
 
-.main-complex-description-text {
+.complex-description-text {
   margin-top: 0;
   margin-bottom: 1.5rem;
   font-size: 16px;
@@ -134,15 +134,15 @@
   color: #3e4247;
 }
 
-.main-complex-description-text:last-child {
+.complex-description-text:last-child {
   margin-bottom: 0;
 }
 
-.main-complex-amenities {
+.complex-amenities {
   padding-bottom: 3.5rem;
 }
 
-.main-complex-amenities-title {
+.complex-amenities-title {
   margin: 0;
   margin-bottom: 0.9rem;
   padding-top: 2.15rem;
@@ -154,20 +154,20 @@
   border-top: solid 1px #eaebf0;
 }
 
-.main-complex-amenities-item {
+.complex-amenities-item {
   margin-bottom: 0.5rem;
   font-size: 16px;
   line-height: 1.38;
   color: #3e4247;
 }
 
-.main-complex-offers {
+.complex-offers {
   padding-top: 4rem;
   padding-bottom: 3.75rem;
   background-color: #f4f5f9;
 }
 
-.main-complex-offers-title {
+.complex-offers-title {
   margin: 0;
   margin-bottom: 1.5rem;
   font-family: Philosopher, sans-serif;
@@ -178,12 +178,12 @@
   text-align: center;
 }
 
-.main-complex-offers-card {
+.complex-offers-card {
   padding: 1.5rem 2rem;
   background-color: #ffffff;
 }
 
-.main-complex-offers-card-title {
+.complex-offers-card-title {
   margin: 0;
   font-family: Philosopher, sans-serif;
   font-size: 20px;
@@ -192,7 +192,7 @@
   color: #3e4247;
 }
 
-.main-complex-offers-card-key {
+.complex-offers-card-key {
   display: block;
   margin: 0;
   margin-bottom: 0.6rem;
@@ -201,7 +201,7 @@
   color: #a9afb6;
 }
 
-.main-complex-offers-card-value {
+.complex-offers-card-value {
   display: block;
   margin: 0;
   margin-top: 1.5rem;
@@ -211,7 +211,7 @@
   color: #3e4247;
 }
 
-.main-complex-offers-card-button {
+.complex-offers-card-button {
   display: block;
   margin: 0 auto;
   margin-top: 2.2rem;
@@ -227,7 +227,7 @@
   cursor: pointer;
 }
 
-.main-complex-geo {
+.complex-geo {
   padding-top: 4rem;
   padding-bottom: 13.5rem;
   margin-bottom: 13.5rem;
@@ -235,7 +235,7 @@
   color: #ffffff;
 }
 
-.main-complex-geo-name {
+.complex-geo-name {
   margin: 0;
   margin-top: 7.45rem;
   margin-bottom: 3.1rem;
@@ -245,7 +245,7 @@
   color: #a9afb6;
 }
 
-.main-complex-geo-title {
+.complex-geo-title {
   margin: 0;
   margin-bottom: 3.2rem;
   font-family: Philosopher, sans-serif;
@@ -255,20 +255,20 @@
   color: #ffffff;
 }
 
-.main-complex-geo-link {
+.complex-geo-link {
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   color: #00779a;
   text-decoration: none;
 }
 
-.main-complex-geo-map {
+.complex-geo-map {
   position: absolute;
   margin-top: 3.8rem;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-.main-complex-geo-nearby {
+.complex-geo-nearby {
   position: absolute;
   width: 583px;
   margin-top: 3.8rem;
@@ -276,18 +276,18 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-.main-complex-geo-nearby-item {
+.complex-geo-nearby-item {
   padding: 1.5rem;
   padding-bottom: 1.57rem;
   box-sizing: border-box;
   border-bottom: solid 1px #e0e0e1;
 }
 
-.main-complex-geo-nearby-item:last-child {
+.complex-geo-nearby-item:last-child {
   border-bottom: 0;
 }
 
-.main-complex-geo-nearby-place {
+.complex-geo-nearby-place {
   display: block;
   margin: 0;
   margin-bottom: 0.5rem;
@@ -297,7 +297,7 @@
   color: #3e4247;
 }
 
-.main-complex-geo-nearby-distance {
+.complex-geo-nearby-distance {
   display: block;
   margin: 0;
   font-size: 16px;
