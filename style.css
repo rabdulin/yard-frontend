@@ -4,6 +4,9 @@ body {
   line-height: 1;
   color: #3e4247;
   background-color: #ffffff;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased;
+  -webkit-line-break: after-white-space;
 }
 
 .container {
@@ -60,7 +63,7 @@ body {
   color: #a9afb6;
 }
 
-.footer-info-text-last {
+.footer-info-text:last-child {
   margin-top: 1.5rem;
 }
 
@@ -83,7 +86,7 @@ body {
   text-decoration: none;
 }
 
-.footer-complexes-link-last {
+.footer-complexes-link:last-child {
   margin-top: 1.7rem;
 }
 
