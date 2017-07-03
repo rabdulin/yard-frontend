@@ -1,0 +1,99 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: #3e4247;
+  background-color: #ffffff;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased;
+  -webkit-line-break: after-white-space;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.header {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: #ffffff;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  margin-left: auto;
+  text-align: right;
+}
+
+.header-nav-link {
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  color: #3e4247;
+  text-decoration: none;
+}
+
+.header-nav-link:last-child {
+  margin-right: 0;
+}
+
+.footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  background-color: #111111;
+  color: #a9afb6;
+}
+
+.footer-info-title, .footer-complexes-title, .footer-company-title {
+  margin: 0;
+  margin-bottom: 1rem;
+
+  font-size: 14px;
+  font-weight: bold;
+  color: #646971;
+}
+
+.footer-info-text {
+  font-size: 14px;
+  font-weight: 300;
+  color: #a9afb6;
+}
+
+.footer-info-text:last-child {
+  margin-top: 1.5rem;
+}
+
+.footer-complexes, .footer-company {
+  border-top: solid 2px #3e4247;
+  padding-top: 1rem;
+}
+
+.footer-nav {
+  padding-top: 1rem;
+  border-top: solid 2px #3e4247;
+}
+
+.footer-complexes-link, .footer-company-link {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-complexes-link:last-child {
+  margin-top: 1.7rem;
+}
+
+.footer-disclaimer {
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #a9afb6;
+  padding-top: 4.3rem;
+}

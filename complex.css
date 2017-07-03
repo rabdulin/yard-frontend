@@ -1,0 +1,306 @@
+.complex {
+  padding-top: 1.5rem;
+  border-top: solid 1px #eaebf0;
+}
+
+.complex-name{
+  margin: 0;
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 700;
+}
+
+.complex-address{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  color: #a9afb6;
+  margin-bottom: 1rem;
+}
+
+.favorites-button {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.0;
+  color: #00779a;
+  text-align: center;
+  background-color: #ffffff;
+  border: solid 1px #e0e0e1;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.complex-gallery {
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.photos-button {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  margin-top: -2.7rem;
+
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.0;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  background-color: #00779a;
+}
+
+.complex-summary {
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.complex-summary-item {
+  margin-right: 3rem;
+}
+
+.complex-summary-title {
+  margin: 0;
+  font-family: Philosopher, sans-serif;
+  font-weight: 700;
+  line-height: 1.12;
+  color: #3e4247;
+}
+
+.complex-summary-subtitle {
+  display: block;
+  margin-top: 0.6rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  color: #a9afb6;
+}
+
+.complex-characters {
+  padding-bottom: 1.5rem;
+}
+
+.complex-characters-title {
+  margin: 0;
+  padding-top: 2.3rem;
+  font-family: Philosopher, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #3e4247;
+  border-top: solid 1px #e0e0e1;
+}
+
+.complex-characters-key {
+  margin-bottom: 0.7rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: #a9afb6;
+}
+
+.complex-characters-value {
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.56;
+  color: #3e4247;
+}
+
+.complex-description {
+  margin-bottom: 1.5rem;
+}
+
+.complex-description-title {
+  margin: 0;
+  font-family: Philosopher, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.12;
+  color: #3e4247;
+}
+
+.complex-description-text {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+  line-height: 1.58;
+  color: #3e4247;
+}
+
+.complex-description-text:last-child {
+  margin-bottom: 0;
+}
+
+.complex-amenities {
+  padding-bottom: 3.5rem;
+}
+
+.complex-amenities-title {
+  margin: 0;
+  margin-bottom: 0.9rem;
+  padding-top: 2.15rem;
+  font-family: Philosopher, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.12;
+  color: #3e4247;
+  border-top: solid 1px #eaebf0;
+}
+
+.complex-amenities-item {
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #3e4247;
+}
+
+.complex-offers {
+  padding-top: 4rem;
+  padding-bottom: 3.75rem;
+  background-color: #f4f5f9;
+}
+
+.complex-offers-title {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  font-family: Philosopher, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.13;
+  color: #3e4247;
+  text-align: center;
+}
+
+.complex-offers-card {
+  padding: 1.5rem 2rem;
+  background-color: #ffffff;
+}
+
+.complex-offers-card-title {
+  margin: 0;
+  font-family: Philosopher, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #3e4247;
+}
+
+.complex-offers-card-key {
+  display: block;
+  margin: 0;
+  margin-bottom: 0.6rem;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #a9afb6;
+}
+
+.complex-offers-card-value {
+  display: block;
+  margin: 0;
+  margin-top: 1.5rem;
+
+  font-size: 16px;
+  line-height: 1.38;
+  color: #3e4247;
+}
+
+.complex-offers-card-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2.2rem;
+  padding: 0.75rem 2rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.0;
+  color: #ffffff;
+  text-align: center;
+  background-color: #000000;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.complex-geo {
+  padding-top: 4rem;
+  padding-bottom: 13.5rem;
+  margin-bottom: 13.5rem;
+  background-color: #3e4247;
+  color: #ffffff;
+}
+
+.complex-geo-name {
+  margin: 0;
+  margin-top: 7.45rem;
+  margin-bottom: 3.1rem;
+  font-family: Philosopher, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #a9afb6;
+}
+
+.complex-geo-title {
+  margin: 0;
+  margin-bottom: 3.2rem;
+  font-family: Philosopher, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.complex-geo-link {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  color: #00779a;
+  text-decoration: none;
+}
+
+.complex-geo-map {
+  position: absolute;
+  margin-top: 3.8rem;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.complex-geo-nearby {
+  position: absolute;
+  width: 583px;
+  margin-top: 3.8rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.complex-geo-nearby-item {
+  padding: 1.5rem;
+  padding-bottom: 1.57rem;
+  box-sizing: border-box;
+  border-bottom: solid 1px #e0e0e1;
+}
+
+.complex-geo-nearby-item:last-child {
+  border-bottom: 0;
+}
+
+.complex-geo-nearby-place {
+  display: block;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38rem;
+  color: #3e4247;
+}
+
+.complex-geo-nearby-distance {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.38rem;
+  color: #a9afb6;
+}
