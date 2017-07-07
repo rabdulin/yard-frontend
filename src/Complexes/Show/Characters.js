@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Col } from "react-flexbox-grid";
+import { Grid, Row, Col } from "react-flexbox-grid";
 
 export default () => {
   return (
@@ -7,7 +7,7 @@ export default () => {
       <Grid>
         <h3 className="complex-characters-title">Характеристики</h3>
         <dl className="complex-characters-list">
-          <div className="row">
+          <Row>
             <Col xs={2}>
               <dt className="complex-characters-key">Количество квартир:</dt>
               <dt className="complex-characters-key">Статус:</dt>
@@ -39,7 +39,7 @@ export default () => {
               <dd className="complex-characters-value">1 503</dd>
               <dd className="complex-characters-value">1 503</dd>
             </Col>
-          </div>
+          </Row>
         </dl>
       </Grid>
     </section>
