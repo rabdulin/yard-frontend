@@ -9,7 +9,7 @@
 .main {
   padding-top: 4rem;
   padding-bottom: 2.8rem;
-  background-image: url("img/background.png");
+  background-image: url("./background.png");
   background-size: 1.25rem 0.625rem;
   background-color: #eaebf0;
 }
