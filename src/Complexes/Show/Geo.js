@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Row, Col } from "react-flexbox-grid";
-import GeoProps from "./GeoProps"
+import GeoItem from "./GeoItem"
 
 export default () => {
   return (
@@ -26,9 +26,9 @@ export default () => {
           </Col>
           <Col lg={6}>
             <div className="complex-geo-nearby">
-              <GeoProps place="Красный Октябрь" distance="24 минуты, 6 км" />
-              <GeoProps place="World Class" distance="2 минуты, 300 м" />
-              <GeoProps place="Третьяковская галерея" distance="14 минут, 4 км" />
+              <GeoItem place="Красный Октябрь" distance="24 минуты, 6 км" />
+              <GeoItem place="World Class" distance="2 минуты, 300 м" />
+              <GeoItem place="Третьяковская галерея" distance="14 минут, 4 км" />
             </div>
           </Col>
         </Row>

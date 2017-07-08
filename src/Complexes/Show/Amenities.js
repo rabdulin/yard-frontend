@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Row, Col } from "react-flexbox-grid";
-import AmenityProps from "./AmenityProps.js";
+import Amenity from "./Amenity";
 
 export default () => {
   return (
@@ -9,25 +9,25 @@ export default () => {
         <h3 className="complex-amenities-title">Инфраструктура</h3>
         <Row>
           <Col xs={2}>
-            <AmenityProps>Бассейн</AmenityProps>
-            <AmenityProps>Частная школа</AmenityProps>
+            <Amenity>Бассейн</Amenity>
+            <Amenity>Частная школа</Amenity>
           </Col>
           <Col xs={2}>
-            <AmenityProps>Детский сад</AmenityProps>
-            <AmenityProps>Частная школа</AmenityProps>
+            <Amenity>Детский сад</Amenity>
+            <Amenity>Частная школа</Amenity>
           </Col>
           <Col xs={2}>
-            <AmenityProps>Частная школа</AmenityProps>
-            <AmenityProps>Частная школа</AmenityProps>
+            <Amenity>Частная школа</Amenity>
+            <Amenity>Частная школа</Amenity>
           </Col>
           <Col xs={2}>
-            <AmenityProps>Бассейн</AmenityProps>
+            <Amenity>Бассейн</Amenity>
           </Col>
           <Col xs={2}>
-            <AmenityProps>Детский сад</AmenityProps>
+            <Amenity>Детский сад</Amenity>
           </Col>
           <Col xs={2}>
-            <AmenityProps>Частная школа</AmenityProps>
+            <Amenity>Частная школа</Amenity>
           </Col>
         </Row>
       </Grid>

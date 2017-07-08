@@ -1,12 +1,12 @@
 import React from "react";
-import SummaryProps from "./SummaryProps";
+import Sum from "./Sum";
 
 export default () => {
   return (
     <section className="complex-summary">
-      <SummaryProps value="950" label="предложений" />
-      <SummaryProps value="John McAslan + Partners" label="архитектор" />
-      <SummaryProps value="Группа «ПСН»" label="застройщик" />
+      <Sum value="950" label="предложений" />
+      <Sum value="John McAslan + Partners" label="архитектор" />
+      <Sum value="Группа «ПСН»" label="застройщик" />
     </section>
   );
 };

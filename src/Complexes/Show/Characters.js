@@ -6,42 +6,51 @@ export default () => {
     <section className="complex-characters">
       <Grid>
         <h3 className="complex-characters-title">Характеристики</h3>
-        <dl className="complex-characters-list">
-          <Row>
-            <Col xs={2}>
+        <Row>
+          <Col xs={4}>
+            <dl className="complex-characters-list">
               <dt className="complex-characters-key">Количество квартир:</dt>
+              <dd className="complex-characters-value">1 503</dd>
+            </dl>
+            <dl className="complex-characters-list">
               <dt className="complex-characters-key">Статус:</dt>
-              <dt className="complex-characters-key">Цены:</dt>
-            </Col>
-            <Col xs={2}>
-              <dd className="complex-characters-value">1 503</dd>
               <dd className="complex-characters-value">Квартиры</dd>
-              <dd className="complex-characters-value">от 5.3 до 143.5 млн
-              </dd>
-            </Col>
-            <Col xs={2}>
+            </dl>
+            <dl className="complex-characters-list">
+              <dt className="complex-characters-key">Цены:</dt>
+              <dd className="complex-characters-value">от 5.3 до 143.5 млн</dd>
+            </dl>
+          </Col>
+          <Col xs={4}>
+            <dl className="complex-characters-list">
               <dt className="complex-characters-key">Количество квартир:</dt>
+              <dd className="complex-characters-value">1 503</dd>
+            </dl>
+            <dl className="complex-characters-list">
+              <dt className="complex-characters-key">Количество квартир::</dt>
+              <dd className="complex-characters-value">1 503</dd>
+            </dl>
+            <dl className="complex-characters-list">
+              <dt className="complex-characters-key">Количество квартир::</dt>
+              <dd className="complex-characters-value">1 503</dd>
+            </dl>
+          </Col>
+          <Col xs={4}>
+            <dl className="complex-characters-list">
               <dt className="complex-characters-key">Количество квартир:</dt>
-              <dt className="complex-characters-key">Количество квартир:</dt>
-            </Col>
-            <Col xs={2}>
               <dd className="complex-characters-value">1 503</dd>
+            </dl>
+            <dl className="complex-characters-list">
+              <dt className="complex-characters-key">Количество квартир::</dt>
               <dd className="complex-characters-value">1 503</dd>
+            </dl>
+            <dl className="complex-characters-list">
+              <dt className="complex-characters-key">Количество квартир::</dt>
               <dd className="complex-characters-value">1 503</dd>
-            </Col>
-            <Col xs={2}>
-              <dt className="complex-characters-key">Количество квартир:</dt>
-              <dt className="complex-characters-key">Количество квартир:</dt>
-              <dt className="complex-characters-key">Количество квартир:</dt>
-            </Col>
-            <Col xs={2}>
-              <dd className="complex-characters-value">1 503</dd>
-              <dd className="complex-characters-value">1 503</dd>
-              <dd className="complex-characters-value">1 503</dd>
-            </Col>
-          </Row>
-        </dl>
-      </Grid>
-    </section>
+            </dl>
+          </Col>
+        </Row>
+      </Grid >
+    </section >
   );
 };
