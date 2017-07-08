@@ -1,20 +1,40 @@
-import React from "react";
-import Logo from "./compass-logo.svg"
-import { Grid } from "react-flexbox-grid";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Grid, Row } from 'react-flexbox-grid';
+import styled from 'styled-components';
 
-export default () => {
-  return (
-    <div>
-      <header className="header">
-        <Grid>
-            <img src={Logo} alt="" classNames="compass-logo" />
-            <nav className="header-nav">
-              <a className="header-nav-link" href="">Купить</a>
-              <a className="header-nav-link" href="">Снять</a>
-              <a className="header-nav-link" href="">Наши агенты</a>
-            </nav>
-        </Grid>
-      </header>
-    </div>
-  );
-};
+import headerLogo from './compass-logo.svg';
+
+const Header = styled.header`
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: #ffffff;
+`;
+
+const Logo = styled.img`height: 24px;`;
+
+const Nav = styled.nav`text-align: right;`;
+
+const NavLink = styled(Link) `
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  color: #3e4247;
+  text-decoration: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+`;
+
+export default () =>
+  <Header>
+    <Grid>
+      <Logo src={headerLogo} />
+      <Nav>
+        <NavLink to="/">Купить</NavLink>
+        <NavLink to="/">Снять</NavLink>
+        <NavLink to="/">Наши агенты</NavLink>
+      </Nav>
+    </Grid>
+  </Header>
+  ;
