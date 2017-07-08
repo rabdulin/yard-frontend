@@ -1,9 +1,14 @@
-import React from "react";
+import React from 'react';
 import styled from 'styled-components';
 
+const Card = styled.div`
+  padding: 1.5rem 2rem;
+  background-color: #ffffff;
+`;
 
 const Title = styled.h4`
   margin: 0;
+  margin-bottom: 1.4rem;
   font-family: Philosopher, sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -23,8 +28,7 @@ const Key = styled.small`
 const Value = styled.p`
   display: block;
   margin: 0;
-  margin-top: 1.5rem;
-
+  margin-bottom: 1.5rem;
   font-size: 16px;
   line-height: 1.38;
   color: #3e4247;
@@ -47,13 +51,17 @@ const Btn = styled.button`
 `;
 
 export default props =>
-  <div>
-    <Title>{props.room}-комнатные квартиры</Title>
+  <Card>
+    <Title>
+      {props.roomsCount}-комнатные квартиры
+    </Title>
+    <Key>Площадь</Key>
     <Value>
-      <Key>Площадь</Key>от {props.space.min} до {props.space.max} м²
+      от {props.area.min} до {props.area.max} м²
     </Value>
+    <Key>Стоимость</Key>
     <Value>
-      <Key>Стоимость</Key>от {props.price.min} до {props.price.max} млн руб
+      от {props.price.min} до {props.price.max} млн руб
     </Value>
     <Btn>Посмотреть предложения</Btn>
-  </div>
+  </Card>;

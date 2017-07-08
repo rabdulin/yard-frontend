@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 
-const Item = styled.div`
+const Space = styled.div`
   padding: 1.5rem;
   padding-bottom: 1.57rem;
   box-sizing: border-box;
@@ -30,7 +30,7 @@ const Distance = styled.p`
 `;
 
 export default props =>
-  <Item>
+  <Space>
     <Place>{props.place}</Place>
     <Distance>{props.distance}</Distance>
-  </Item>
+  </Space>

@@ -10,9 +10,9 @@ const Card = styled(Link) `
   border-bottom: solid 2px #646971;
 
   cursor: pointer;
-    text-decoration: none;
-     &:hover {
-      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+    &:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   }
 `;
 

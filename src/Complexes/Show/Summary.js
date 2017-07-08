@@ -1,5 +1,5 @@
 import React from "react";
-import Sum from "./Sum";
+import SumItem from "./SumItem";
 import styled from 'styled-components';
 
 const Summary = styled.section`
@@ -11,9 +11,9 @@ const Summary = styled.section`
 export default () => {
   return (
     <Summary>
-      <Sum value="950" label="предложений" />
-      <Sum value="John McAslan + Partners" label="архитектор" />
-      <Sum value="Группа «ПСН»" label="застройщик" />
+      <SumItem value="950" label="предложений" />
+      <SumItem value="John McAslan + Partners" label="архитектор" />
+      <SumItem value="Группа «ПСН»" label="застройщик" />
     </Summary>
   );
 };

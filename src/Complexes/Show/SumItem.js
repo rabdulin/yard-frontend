@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 
 
-const Item = styled.div`
+const Sight = styled.div`
   margin-right: 3rem;
 `;
 
@@ -25,8 +25,8 @@ const Subtitle = styled.small`
 `;
 
 export default props =>
-  <Item>
+  <Sight>
     <Title>{props.value}
       <Subtitle>{props.label}</Subtitle>
     </Title>
-  </Item>;
+  </Sight>;
