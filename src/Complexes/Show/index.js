@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "react-flexbox-grid";
+import styled from 'styled-components';
 
 import Name from "./Name";
 import Gallery from "./Gallery";
@@ -13,9 +14,14 @@ import Geo from "./Geo";
 
 import "./complex.css";
 
+const Complex = styled.main`
+  padding-top: 1.5rem;
+  border-top: solid 1px #eaebf0;
+`;
+
 export default () => {
   return (
-    <main className="complex">
+    <Complex>
       <Name />
       <Gallery />
       <Grid>
@@ -27,6 +33,6 @@ export default () => {
       <Amenities />
       <Offers />
       <Geo />
-    </main >
+    </Complex>
   );
 };

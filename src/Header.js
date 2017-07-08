@@ -29,12 +29,14 @@ const NavLink = styled(Link) `
 export default () =>
   <Header>
     <Grid>
-      <Logo src={headerLogo} />
-      <Nav>
-        <NavLink to="/">Купить</NavLink>
-        <NavLink to="/">Снять</NavLink>
-        <NavLink to="/">Наши агенты</NavLink>
-      </Nav>
+      <Row middle="xs" between="xs">
+        <Logo src={headerLogo} />
+        <Nav>
+          <NavLink to="/">Купить</NavLink>
+          <NavLink to="/">Снять</NavLink>
+          <NavLink to="/">Наши агенты</NavLink>
+        </Nav>
+      </Row>
     </Grid>
   </Header>
   ;

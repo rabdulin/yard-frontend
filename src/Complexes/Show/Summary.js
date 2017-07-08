@@ -1,12 +1,19 @@
 import React from "react";
-import SummaryProps from "./SummaryProps";
+import Sum from "./Sum";
+import styled from 'styled-components';
+
+const Summary = styled.section`
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+`;
 
 export default () => {
   return (
-    <section className="complex-summary">
-      <SummaryProps value="950" label="предложений" />
-      <SummaryProps value="John McAslan + Partners" label="архитектор" />
-      <SummaryProps value="Группа «ПСН»" label="застройщик" />
-    </section>
+    <Summary>
+      <Sum value="950" label="предложений" />
+      <Sum value="John McAslan + Partners" label="архитектор" />
+      <Sum value="Группа «ПСН»" label="застройщик" />
+    </Summary>
   );
 };
