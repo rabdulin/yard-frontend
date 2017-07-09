@@ -1,42 +1,52 @@
 import React from 'react';
-import { Grid, Row, Col } from "react-flexbox-grid";
-import Offer from "./Offer";
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import styled from 'styled-components';
 
-export default () => {
-  return (
-    <section className="complex-offers">
-      <Grid>
-        <h3 className="complex-offers-title">Предложения в ЖК «Полянка/44»</h3>
-        <Row>
-          <Col xs={4}>
-            <div className="complex-offers-card">
-              <Offer
-                room={1}
-                space={{ min: 59, max: 120 }}
-                price={{ min: 20.3, max: 84.2 }}
-              />
-            </div>
-          </Col>
-          <Col xs={4}>
-            <div className="complex-offers-card">
-              <Offer
-                room={2}
-                space={{ min: 59, max: 120 }}
-                price={{ min: 20.3, max: 84.2 }}
-              />
-            </div>
-          </Col>
-          <Col xs={4}>
-            <div className="complex-offers-card">
-              <Offer
-                room={3}
-                space={{ min: 59, max: 120 }}
-                price={{ min: 20.3, max: 84.2 }}
-              />
-            </div>
-          </Col>
-        </Row>
-      </Grid>
-    </section>
-  );
-};
+import Offer from './Offer';
+
+const Offers = styled.section`
+  padding-top: 4.1rem;
+  padding-bottom: 3.75rem;
+  background-color: #f4f5f9;
+`;
+
+const Title = styled.h3`
+  margin: 0;
+  margin-bottom: 1.55rem;
+  font-family: Philosopher, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.12;
+  color: #3e4247;
+  text-align: center;
+`;
+
+export default () =>
+  <Offers>
+    <Grid>
+      <Title>Предложения в ЖК «Полянка/44»</Title>
+      <Row>
+        <Col xs={4}>
+          <Offer
+            roomsCount={1}
+            area={{ min: 59, max: 120 }}
+            price={{ min: 20.3, max: 84.2 }}
+          />
+        </Col>
+        <Col xs={4}>
+          <Offer
+            roomsCount={2}
+            area={{ min: 59, max: 120 }}
+            price={{ min: 20.3, max: 84.2 }}
+          />
+        </Col>
+        <Col xs={4}>
+          <Offer
+            roomsCount={3}
+            area={{ min: 59, max: 120 }}
+            price={{ min: 20.3, max: 84.2 }}
+          />
+        </Col>
+      </Row>
+    </Grid>
+  </Offers>;
