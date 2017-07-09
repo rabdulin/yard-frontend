@@ -1,38 +1,90 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Grid, Row, Col } from "react-flexbox-grid";
 import GeoItem from "./GeoItem"
+import styled from 'styled-components';
+
+
+const Landmark = styled.section`
+  padding-top: 4rem;
+  padding-bottom: 13.5rem;
+  margin-bottom: 13.5rem;
+  background-color: #3e4247;
+  color: #ffffff;
+`;
+
+const Name = styled.h5`
+  margin: 0;
+  margin-top: 7.45rem;
+  margin-bottom: 3.1rem;
+  font-family: Philosopher, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #a9afb6;
+`;
+
+const Title = styled.h2`
+  margin: 0;
+  margin-bottom: 3.2rem;
+  font-family: Philosopher, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+`;
+
+const LandmarkLink = styled(Link) `
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  color: #00779a;
+  text-decoration: none;
+`;
+
+const MapImg = styled.img`
+  position: absolute;
+  margin-top: 3.8rem;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+`;
+
+const Nearby = styled.div`
+  position: absolute;
+  width: 583px;
+  margin-top: 3.8rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+`;
 
 export default () => {
   return (
-    <section className="complex-geo">
+    <Landmark>
       <Grid>
         <Row>
           <Col xs={6}>
-            <h5 className="complex-geo-name">Якиманка</h5>
-            <h2 className="complex-geo-title">Исторический центр Москвы в двух<br /> километрах от Кремля</h2>
-            <a href="" className="complex-geo-link">Гид по Якиманке &#x2192;</a>
+            <Name>Якиманка</Name>
+            <Title>Исторический центр Москвы в двух<br /> километрах от Кремля</Title>
+            <LandmarkLink to="/">Гид по Якиманке &#x2192;</LandmarkLink>
           </Col>
           <Col lg={6}>
             <img
               src={process.env.PUBLIC_URL + './polyanka-photo.jpg'}
-              alt="Полянка" className="complex-geo-img" />
+              alt="Полянка" />
           </Col>
         </Row>
         <Row>
           <Col lg={6}>
-            <img className="complex-geo-map"
+            <MapImg
               src={process.env.PUBLIC_URL + './map.png'}
               alt="" />
           </Col>
           <Col lg={6}>
-            <div className="complex-geo-nearby">
+            <Nearby>
               <GeoItem place="Красный Октябрь" distance="24 минуты, 6 км" />
               <GeoItem place="World Class" distance="2 минуты, 300 м" />
               <GeoItem place="Третьяковская галерея" distance="14 минут, 4 км" />
-            </div>
+            </Nearby>
           </Col>
         </Row>
       </Grid>
-    </section>
+    </Landmark>
   );
 };
