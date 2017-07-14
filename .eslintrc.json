@@ -1,3 +1,18 @@
 {
-    "extends": "airbnb"
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules":{
+    "linebreak-style": 0,
+	"react/prop-types": "off"
+  }
 }

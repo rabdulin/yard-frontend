@@ -27,7 +27,7 @@ const NavLink = styled(Link) `
 `;
 
 export default () =>
-  <Header>
+  (<Header>
     <Grid>
       <Row middle="xs" between="xs">
         <Logo src={headerLogo} />
@@ -38,5 +38,4 @@ export default () =>
         </Nav>
       </Row>
     </Grid>
-  </Header>
-  ;
+  </Header>);

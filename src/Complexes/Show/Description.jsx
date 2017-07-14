@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Row, Col } from "react-flexbox-grid";
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import styled from 'styled-components';
 
 
@@ -27,7 +27,7 @@ const Text = styled.p`
   }
 `;
 
-export default () =>
+export default () => (
   <Description>
     <Grid>
       <Row>
@@ -67,4 +67,5 @@ export default () =>
         </Col>
       </Row>
     </Grid>
-  </Description>;
+  </Description>
+);

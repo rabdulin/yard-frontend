@@ -50,7 +50,7 @@ const Btn = styled.button`
   cursor: pointer;
 `;
 
-export default props =>
+export default props => (
   <Card>
     <Title>
       {props.roomsCount}-комнатные квартиры
@@ -64,4 +64,5 @@ export default props =>
       от {props.price.min} до {props.price.max} млн руб
     </Value>
     <Btn>Посмотреть предложения</Btn>
-  </Card>;
+  </Card>
+);

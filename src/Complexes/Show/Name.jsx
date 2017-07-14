@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Row } from "react-flexbox-grid";
+import { Grid, Row } from 'react-flexbox-grid';
 import styled from 'styled-components';
 
 const Location = styled.div`margin-bottom: 0rem;`;
@@ -33,7 +33,7 @@ const Btn = styled.button`
   cursor: pointer;
 `;
 
-export default props =>
+export default () => (
   <Grid>
     <Row between="xs">
       <Location>
@@ -46,4 +46,5 @@ export default props =>
       </Location>
       <Btn>В избранное</Btn>
     </Row>
-  </Grid>;
+  </Grid>
+);

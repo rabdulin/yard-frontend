@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "micro": "^7.3.3",
     "normalize.css": "^7.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -19,7 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "prepush": "./node_modules/.bin/eslint —ext js —ext jsx src/"
+	"lint": "./node_modules/.bin/eslint --ext js --ext jsx src/",
+    "prepush": "npm run lint"
   },
   "devDependencies": {
     "eslint": "^3.19.0",

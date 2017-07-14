@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import styled from 'styled-components';
 
 const Facility = styled.div`
@@ -8,7 +8,8 @@ const Facility = styled.div`
   color: #3e4247;
 `;
 
-export default props =>
+export default props => (
   <Facility>
     {props.children}
-  </Facility>;
+  </Facility>
+);

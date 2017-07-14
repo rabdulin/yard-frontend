@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import styled from 'styled-components';
 
 
@@ -9,7 +9,8 @@ const Banner = styled.section`
   text-align: center;
 `;
 
-export default () =>
+export default () => (
   <Banner>
-    <img src={process.env.PUBLIC_URL + './compass-development-logo.svg'} />
-  </Banner>;
+    <img alt="" src={`${process.env.PUBLIC_URL}./compass-development-logo.svg`} />
+  </Banner>
+);

@@ -21,7 +21,7 @@ const Title = styled.h3`
   text-align: center;
 `;
 
-export default () =>
+export default () => (
   <Offers>
     <Grid>
       <Title>Предложения в ЖК «Полянка/44»</Title>
@@ -49,4 +49,5 @@ export default () =>
         </Col>
       </Row>
     </Grid>
-  </Offers>;
+  </Offers>
+);

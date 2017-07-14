@@ -1,5 +1,5 @@
-import React from "react";
-import { Row, Col } from "react-flexbox-grid";
+import React from 'react';
+import { Row, Col } from 'react-flexbox-grid';
 import styled from 'styled-components';
 
 const Title = styled.h2`
@@ -31,18 +31,16 @@ const Btn = styled.button`
   cursor: pointer;
 `;
 
-export default () => {
-  return (
-    <Row center="xs">
-      <Col xs={8}>
-        <Title>Discover Our New Developments</Title>
-        <Text>
-          Compass brings a modern approach to new development marketing and
+export default () => (
+  <Row center="xs">
+    <Col xs={8}>
+      <Title>Discover Our New Developments</Title>
+      <Text>
+        Compass brings a modern approach to new development marketing and
           sales. From boutique rental conversions to luxurious ground-up
           condominiums, browse our portfolio of current offerings.
         </Text>
-        <Btn>Contact the team</Btn>
-      </Col>
-    </Row>
-  );
-};
+      <Btn>Contact the team</Btn>
+    </Col>
+  </Row>
+);

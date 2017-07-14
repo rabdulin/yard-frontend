@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -49,7 +49,7 @@ const Description = styled.p`
   line-height: 1.5;
 `;
 
-export default props =>
+export default props => (
   <Card to="/complex">
     <Img src={props.src} srcset={props.srcset} />
     <Info>
@@ -63,4 +63,5 @@ export default props =>
         {props.children}
       </Description>
     </Info>
-  </Card>;
+  </Card>
+);

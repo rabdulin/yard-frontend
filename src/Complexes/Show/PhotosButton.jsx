@@ -15,8 +15,6 @@ const Btn = styled.button`
   background-color: #00779a;
 `;
 
-export default () => {
-  return (
-    <Btn>41 фотография</Btn>
-  );
-};
+export default () => (
+  <Btn>41 фотография</Btn>
+);
