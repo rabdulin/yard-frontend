@@ -70,11 +70,11 @@ export default () => (
             <Value>1 503</Value>
           </Block>
           <Block>
-            <Label>Количество квартир::</Label>
+            <Label>Количество квартир:</Label>
             <Value>1 503</Value>
           </Block>
           <Block>
-            <Label>Количество квартир::</Label>
+            <Label>Количество квартир:</Label>
             <Value>1 503</Value>
           </Block>
         </Col>
@@ -84,11 +84,11 @@ export default () => (
             <Value>1 503</Value>
           </Block>
           <Block>
-            <Label>Количество квартир::</Label>
+            <Label>Количество квартир:</Label>
             <Value>1 503</Value>
           </Block>
           <Block>
-            <Label>Количество квартир::</Label>
+            <Label>Количество квартир:</Label>
             <Value>1 503</Value>
           </Block>
         </Col>

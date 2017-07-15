@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Card = styled(Link) `
   display: flex;
   margin-bottom: 3rem;
-
+  color: 
   background-color: #ffffff;
   border-bottom: solid 2px #646971;
 
@@ -43,10 +43,12 @@ const Title = styled.h3`
   font-size: 40px;
   font-weight: bold;
   line-height: 1.4;
+  color: #000000;
 `;
 
 const Description = styled.p`
   line-height: 1.5;
+  color: #3e4247;
 `;
 
 export default props => (
