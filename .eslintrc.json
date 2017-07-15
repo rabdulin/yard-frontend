@@ -11,8 +11,7 @@
     "browser": true,
     "jest": true
   },
-  "rules":{
-    "linebreak-style": 0,
-	"react/prop-types": "off"
+  "rules": {
+    "react/prop-types": "off"
   }
 }
