@@ -54,27 +54,32 @@ const Nearby = styled.div`
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 `;
 
-export default () => (
+export default props => (
   <Landmark>
     <Grid>
       <Row>
         <Col xs={6}>
-          <Name>Якиманка</Name>
-          <Title>Исторический центр Москвы в двух<br /> километрах от Кремля</Title>
-          <LandmarkLink to="/">Гид по Якиманке &#x2192;</LandmarkLink>
+          <Name>{props.district}</Name>
+          <Title>{props.tagline}</Title>
+          <LandmarkLink to="/"> {props.link} →</LandmarkLink>
         </Col>
         <Col lg={6}>
           <img
-            src={`${process.env.PUBLIC_URL}./polyanka-photo.jpg`}
-            alt="Полянка"
+            alt=""
+            src={`${process.env.PUBLIC_URL}/polyanka-photo.jpg`}
+            srcSet={`${`${process.env.PUBLIC_URL}/polyanka-photo@2x.jpg`} 2x, ${`${process.env
+              .PUBLIC_URL}/polyanka-photo@3x.jpg`} 3x`}
           />
         </Col>
       </Row>
       <Row>
         <Col lg={6}>
           <MapImg
-            src={`${process.env.PUBLIC_URL}./map.png`}
             alt=""
+            className="sights-map"
+            src={`${process.env.PUBLIC_URL}/map.png`}
+            srcSet={`${`${process.env.PUBLIC_URL}/map@2x.png`} 2x, ${`${process.env
+              .PUBLIC_URL}/map@3x.png`} 3x`}
           />
         </Col>
         <Col lg={6}>

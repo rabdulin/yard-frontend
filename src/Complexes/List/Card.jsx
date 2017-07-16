@@ -3,67 +3,83 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Card = styled(Link) `
-  display: flex;
-  margin-bottom: 3rem;
-  color: 
-  background-color: #ffffff;
-  border-bottom: solid 2px #646971;
-
-  cursor: pointer;
   text-decoration: none;
-    &:hover {
+`;
+
+const Complex = styled.article`
+  margin-bottom: 3rem;
+  display: flex;
+  background-color: #fff;
+  &:hover {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   }
 `;
 
 const Img = styled.img`
-  display: block;
-  width: 100%;
-  height: auto;
+  max-width: 491px;
+  max-height: 350px;
 `;
 
-const Info = styled.article`
-  padding: 1.5rem 2rem;
-  background-color: #ffffff;
+const Info = styled.div`
+  width: 100%;
+  font-family: "Fira Sans", "Helvetica Neue", "Lucida Sans Unicode", sans-serif;
+  border-bottom: 2px solid #646971;
 `;
 
 const Location = styled.p`
-  margin: 0;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-
-  font-family: Monaco, Menlo, Consolas, monospace;
-  font-size: 16px;
+  margin-left: 2rem;
   text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Monaco", "Lucida Console", monospace;
+  line-height: 1.25;
   color: #646971;
 `;
 
 const Title = styled.h3`
-  margin: 0;
-
-  font-size: 40px;
-  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+  margin-left: 2rem;
+  font-weight: 700;
+  font-size: 2.5rem;
   line-height: 1.4;
   color: #000000;
 `;
 
 const Description = styled.p`
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+  margin-right: 5.375rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: #3e4247;
 `;
 
-export default props => (
-  <Card to="/complex">
-    <Img src={props.src} srcset={props.srcset} />
-    <Info>
-      <Location>
-        {props.location}
-      </Location>
-      <Title>
-        {props.name}
-      </Title>
-      <Description>
-        {props.children}
-      </Description>
-    </Info>
+
+export default props =>
+  (<Card to={`/complexes/${props.complex.slug}`}>
+    <Complex>
+      <Img
+        src={`https://yard-images.s3.amazonaws.com/${props.complex.image.id}-512`}
+        srcSet={
+          `https://yard-images.s3.amazonaws.com/${props.complex.image.id}-1024 2x,` +
+          `https://yard-images.s3.amazonaws.com/${props.complex.image.id}-2048 3x,`
+        }
+        alt={props.complex.name}
+      />
+      <Info>
+        <Location>
+          {`${props.complex.location.subLocalityName}, ${props.complex.location.street}, ${props
+            .complex.location.house}`}
+        </Location>
+        <Title>
+          {props.complex.name}
+        </Title>
+        <Description>
+          {props.complex.shortDescription}
+        </Description>
+      </Info>
+    </Complex>
   </Card>
-);
+  );

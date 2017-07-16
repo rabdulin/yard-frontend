@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import SumItem from './SumItem';
+import Sight from './SumItem';
+import ruplu from 'ruplu';
+
+const offers = ruplu(['предложение', 'предложения', 'предложений']);
 
 const Summary = styled.section`
   display: flex;
@@ -8,9 +11,10 @@ const Summary = styled.section`
   padding-bottom: 1.5rem;
 `;
 
-export default () =>
+export default props =>
   (<Summary>
-    <SumItem value="950" label="предложений" />
-    <SumItem value="John McAslan + Partners" label="архитектор" />
-    <SumItem value="Группа «ПСН»" label="застройщик" />
+    {props.offers &&
+      <Sight value={props.offers} label={offers(props.offers.length, true)} />}
+    {props.details.architect && <Sight value={props.details.architect} label="архитектор" />}
+    {props.details.developer && <Sight value={props.details.developer} label="застройщик" />}
   </Summary>);

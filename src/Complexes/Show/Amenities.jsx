@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import styled from 'styled-components';
-
+import Amenity from './Amenity';
 
 const Infrastructure = styled.section`
   padding-bottom: 3.5rem;
@@ -19,40 +19,17 @@ const Title = styled.h3`
   border-top: solid 1px #eaebf0;
 `;
 
-const Facility = styled.div`
-  margin-bottom: 0.5rem;
-  font-size: 16px;
-  line-height: 1.38;
-  color: #3e4247;
-`;
-
-export default () => (
-  <Infrastructure>
+export default props =>
+  (<Infrastructure>
     <Grid>
-      <Title>Инфраструктура</Title>
-      <Row>
-        <Col xs={2}>
-          <Facility>Бассейн</Facility>
-          <Facility>Частная школа</Facility>
-        </Col>
-        <Col xs={2}>
-          <Facility>Детский сад</Facility>
-          <Facility>Частная школа</Facility>
-        </Col>
-        <Col xs={2}>
-          <Facility>Частная школа</Facility>
-          <Facility>Частная школа</Facility>
-        </Col>
-        <Col xs={2}>
-          <Facility>Бассейн</Facility>
-        </Col>
-        <Col xs={2}>
-          <Facility>Детский сад</Facility>
-        </Col>
-        <Col xs={2}>
-          <Facility>Частная школа</Facility>
-        </Col>
-      </Row>
+      {props.amenity && <Title>Инфраструктура</Title>}
+      {props.amenity &&
+        <Row>
+          {props.amenities.map(amenity =>
+            (<Col xs={2}>
+              <Amenity amenity={amenity} />
+            </Col>),
+          )}
+        </Row>}
     </Grid>
-  </Infrastructure>
-);
+  </Infrastructure>);

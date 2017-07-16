@@ -21,33 +21,21 @@ const Title = styled.h3`
   text-align: center;
 `;
 
-export default () => (
-  <Offers>
+export default props =>
+  (<Offers>
     <Grid>
-      <Title>Предложения в ЖК «Полянка/44»</Title>
+      <Title>Предложения в ЖК «{props.name}»</Title>
       <Row>
         <Col xs={4}>
-          <Offer
-            roomsCount={1}
-            area={{ min: 59, max: 120 }}
-            price={{ min: 20.3, max: 84.2 }}
-          />
+          <Offer room={1} space={{ min: 59, max: 120 }} price={{ min: 20.3, max: 84.2 }} />
         </Col>
         <Col xs={4}>
-          <Offer
-            roomsCount={2}
-            area={{ min: 59, max: 120 }}
-            price={{ min: 20.3, max: 84.2 }}
-          />
+          <Offer room={2} space={{ min: 59, max: 120 }} price={{ min: 20.3, max: 84.2 }} />
         </Col>
         <Col xs={4}>
-          <Offer
-            roomsCount={3}
-            area={{ min: 59, max: 120 }}
-            price={{ min: 20.3, max: 84.2 }}
-          />
+          <Offer room={3} space={{ min: 59, max: 120 }} price={{ min: 20.3, max: 84.2 }} />
         </Col>
       </Row>
     </Grid>
   </Offers>
-);
+  );

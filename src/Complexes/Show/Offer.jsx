@@ -53,16 +53,16 @@ const Btn = styled.button`
 export default props => (
   <Card>
     <Title>
-      {props.roomsCount}-комнатные квартиры
+      {props.room}-комнатные квартиры
     </Title>
     <Key>Площадь</Key>
     <Value>
-      от {props.area.min} до {props.area.max} м²
+      от {props.space.min} до {props.space.max} м²
     </Value>
     <Key>Стоимость</Key>
     <Value>
       от {props.price.min} до {props.price.max} млн руб
     </Value>
-    <Btn>Посмотреть предложения</Btn>
+    <Btn>Посмотреть&nbsp;предложения</Btn>
   </Card>
 );

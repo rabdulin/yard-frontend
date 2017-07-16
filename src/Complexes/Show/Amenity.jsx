@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Facility = styled.div`
+const Amenity = styled.div`
   margin-bottom: 0.5rem;
   font-size: 16px;
   line-height: 1.38;
@@ -9,7 +9,7 @@ const Facility = styled.div`
 `;
 
 export default props => (
-  <Facility>
+  <Amenity>
     {props.children}
-  </Facility>
+  </Amenity>
 );

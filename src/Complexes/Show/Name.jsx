@@ -33,18 +33,19 @@ const Btn = styled.button`
   cursor: pointer;
 `;
 
-export default () => (
+export default props => (
   <Grid>
     <Row between="xs">
       <Location>
         <Name>
-          Жилой комплекс «Полянка/44»
+          {props.name}
         </Name>
         <Address>
-          Район Якиманка, улица Большая Полянка, дом 44 • 119180
+          Район {props.address.subLocalityName}, {props.address.street}, дом {props.address.house} •{' '}
+          {props.address.postalCode}
         </Address>
       </Location>
-      <Btn>В избранное</Btn>
+      <Btn>В&nbsp;избранное</Btn>
     </Row>
   </Grid>
 );

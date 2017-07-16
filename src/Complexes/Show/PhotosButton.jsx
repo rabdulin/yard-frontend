@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import ruplu from 'ruplu';
+
+const photos = ruplu(['фотография', 'фотографии', 'фотографий']);
 
 const Btn = styled.button`
   position: absolute;
@@ -15,6 +18,6 @@ const Btn = styled.button`
   background-color: #00779a;
 `;
 
-export default () => (
-  <Btn>41 фотография</Btn>
+export default props => (
+  <Btn>{photos(props.images.length, true)}</Btn>
 );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import styled from 'styled-components';
-
+import { securityKinds, constructionKinds, quarters } from '../../Localization';
 
 const Details = styled.section`
   padding-bottom: 2.5rem;
@@ -45,15 +45,18 @@ const Value = styled.dd`
 `;
 
 
-export default () => (
+export default props => (
   <Details>
     <Grid>
       <Title>Характеристики</Title>
       <Row>
         <Col xs={4}>
           <Block>
-            <Label>Количество квартир:</Label>
-            <Value>1 503</Value>
+            {props.flats && <Label>Количество квартир</Label>}
+            {props.flats &&
+              <Value>
+                {props.flats}
+              </Value>}
           </Block>
           <Block>
             <Label>Статус:</Label>
@@ -61,35 +64,49 @@ export default () => (
           </Block>
           <Block>
             <Label>Цены:</Label>
-            <Value>от 5.3 до 143.5 млн</Value>
+            <Value>от {(props.statistics.price.from.rub / 1000000).toFixed(2)} до{' '}
+              {(props.statistics.price.to.rub / 1000000).toFixed(2)} млн ₽</Value>
+          </Block>
+          <Block>
+            <Label>Безопасность:</Label>
+            <Value>{securityKinds[props.details.security]}</Value>
           </Block>
         </Col>
         <Col xs={4}>
           <Block>
-            <Label>Количество квартир:</Label>
-            <Value>1 503</Value>
+            <Label>Конструкция корпусов:</Label>
+            <Value>{constructionKinds[props.details.constructionKind]}</Value>
           </Block>
           <Block>
-            <Label>Количество квартир:</Label>
-            <Value>1 503</Value>
+            <Label>Площадь:</Label>
+            <Value>от {props.statistics.totalArea.from.toFixed(0)} до{' '}
+              {props.statistics.totalArea.to.toFixed(0)} м²</Value>
           </Block>
           <Block>
-            <Label>Количество квартир:</Label>
-            <Value>1 503</Value>
+            <Label>Высота потолков:</Label>
+            <Value>{props.details.ceilHeight.from.toFixed(2)}–{props.details.ceilHeight.to.toFixed(2)} м</Value>
+          </Block>
+          <Block>
+            <Label>Обслуживание:</Label>
+            <Value>{props.details.maintenanceCosts} ₽ / м² / месяц</Value>
           </Block>
         </Col>
         <Col xs={4}>
           <Block>
-            <Label>Количество квартир:</Label>
-            <Value>1 503</Value>
+            <Label>Начало строительства:</Label>
+            <Value>{quarters[props.details.startQuarter]} квартал {props.details.startYear} года</Value>
           </Block>
           <Block>
-            <Label>Количество квартир:</Label>
-            <Value>1 503</Value>
+            <Label>Конец строительства:</Label>
+            <Value>{quarters[props.details.commissioningQuarter]} квартал {props.details.commissioningYear} года</Value>
           </Block>
           <Block>
-            <Label>Количество квартир:</Label>
-            <Value>1 503</Value>
+            <Label>Наземная парковка:</Label>
+            <Value>{props.details.parkings ? `${props.details.parkings} м/м` : 'Нет'}</Value>
+          </Block>
+          <Block>
+            <Label>Подземная парковка:</Label>
+            <Value>{props.details.undergroundGarages ? `${props.details.undergroundGarages} м/м` : 'Нет'}</Value>
           </Block>
         </Col>
       </Row>
