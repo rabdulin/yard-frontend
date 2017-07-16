@@ -43,14 +43,16 @@ class Complex extends Component {
         <Characters
           flats={complex.units}
           details={complex.details}
-          statistics={complex.statistics} />
+          statistics={complex.statistics}
+        />
         {complex.fullDescription && <Description text={complex.fullDescription} />}
         <Amenities amenities={complex.amenities} />
         <Offers name={complex.name} />
         <Geo
           district="Якиманка"
           tagline="Исторический центр Москвы в&nbsp;двух километрах&nbsp;от&nbsp;Кремля"
-          link="Гид по Якиманке" />
+          link="Гид по Якиманке"
+        />
       </Characteristics>
     );
   }

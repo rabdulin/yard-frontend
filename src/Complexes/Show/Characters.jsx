@@ -84,7 +84,8 @@ export default props => (
           </Block>
           <Block>
             <Label>Высота потолков:</Label>
-            <Value>{props.details.ceilHeight.from.toFixed(2)}–{props.details.ceilHeight.to.toFixed(2)} м</Value>
+            <Value>{props.details.ceilHeight.from.toFixed(2)}–
+              {props.details.ceilHeight.to.toFixed(2)} м</Value>
           </Block>
           <Block>
             <Label>Обслуживание:</Label>
@@ -94,11 +95,13 @@ export default props => (
         <Col xs={4}>
           <Block>
             <Label>Начало строительства:</Label>
-            <Value>{quarters[props.details.startQuarter]} квартал {props.details.startYear} года</Value>
+            <Value>{quarters[props.details.startQuarter]} квартал
+              {props.details.startYear} года</Value>
           </Block>
           <Block>
             <Label>Конец строительства:</Label>
-            <Value>{quarters[props.details.commissioningQuarter]} квартал {props.details.commissioningYear} года</Value>
+            <Value>{quarters[props.details.commissioningQuarter]} квартал
+              {props.details.commissioningYear} года</Value>
           </Block>
           <Block>
             <Label>Наземная парковка:</Label>

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
-import get from '../../api';
 import { Grid } from 'react-flexbox-grid';
 import styled from 'styled-components';
-
+import get from '../../api';
 import BlackLogo from './BlackLogo';
 import Banner from './Banner';
 import Card from './Card';
