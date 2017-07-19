@@ -96,12 +96,12 @@ export default props => (
           <Block>
             <Label>Начало строительства:</Label>
             <Value>{quarters[props.details.startQuarter]} квартал
-              {props.details.startYear} года</Value>
+              {' '} {props.details.startYear} года</Value>
           </Block>
           <Block>
             <Label>Конец строительства:</Label>
             <Value>{quarters[props.details.commissioningQuarter]} квартал
-              {props.details.commissioningYear} года</Value>
+              {' '} {props.details.commissioningYear} года</Value>
           </Block>
           <Block>
             <Label>Наземная парковка:</Label>
