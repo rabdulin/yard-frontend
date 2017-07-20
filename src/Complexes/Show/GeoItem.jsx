@@ -29,9 +29,10 @@ const Distance = styled.p`
   color: #a9afb6;
 `;
 
-export default props => (
-  <Space>
-    <Place>{props.place}</Place>
-    <Distance>{props.distance}</Distance>
-  </Space>
-);
+export default props =>
+  (
+    <Space>
+      <Place>{props.place}</Place>
+      <Distance>{props.distance}</Distance>
+    </Space>
+  );
