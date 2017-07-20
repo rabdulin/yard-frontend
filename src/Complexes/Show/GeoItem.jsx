@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from 'styled-components';
 
 const Space = styled.div`
@@ -29,9 +29,8 @@ const Distance = styled.p`
   color: #a9afb6;
 `;
 
-export default props => (
+export default props =>
   <Space>
     <Place>{props.place}</Place>
     <Distance>{props.distance}</Distance>
   </Space>
-);

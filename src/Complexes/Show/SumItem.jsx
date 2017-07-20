@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from 'styled-components';
 
 
@@ -24,10 +24,9 @@ const Subtitle = styled.small`
   color: #a9afb6;
 `;
 
-export default props => (
+export default props =>
   <Sight>
     <Title>{props.value}
       <Subtitle>{props.label}</Subtitle>
     </Title>
-  </Sight>
-);
+  </Sight>;

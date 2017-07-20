@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ruplu from 'ruplu';
-import Sight from './SumItem';
+import Sight from './SumItem'
 
 const offers = ruplu(['предложение', 'предложения', 'предложений']);
 
