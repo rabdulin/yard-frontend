@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import styled from 'styled-components';
 
 const Space = styled.div`
@@ -30,7 +30,9 @@ const Distance = styled.p`
 `;
 
 export default props =>
-  <Space>
-    <Place>{props.place}</Place>
-    <Distance>{props.distance}</Distance>
-  </Space>
+  (
+    <Space>
+      <Place>{props.place}</Place>
+      <Distance>{props.distance}</Distance>
+    </Space>
+  );
